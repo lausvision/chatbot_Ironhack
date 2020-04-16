@@ -17,9 +17,27 @@
     </nav>
 
     <main>
-      <section id="chat"></section>
+      <section id="chat">
 
-      <section id="input-wrapper"></section>
+        <div class="message">
+          <img src="./images/ironhack.png" alt="avatar photo" class="avatar" />
+          <h3 class="headline">Chatbot</h3>
+          <p>Welcome to IronChat!</p>
+        </div>
+
+        <div class="message align-right">
+          <img src="./images/ironhack.png" alt="avatar photo" class="avatar" />
+          <h3 class="headline">Me</h3>
+          <p>Hello!</p>
+        </div>
+      </section>
+
+      <section id="input-wrapper">
+        <input type="text" id="message-input" placeholder="Type a message" />
+        <img src="./images/send.png" alt="send icon" id="message-send-img" />
+      </section>
+
+    
     </main>
 
     <!-- JS scripts are loaded after the HTML content/tags -->
