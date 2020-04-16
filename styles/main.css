@@ -1,0 +1,77 @@
+/******** CSS RESET *********/
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/******** TYPOGRAPHY *********/
+h1,
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  letter-spacing: 0.5px;
+}
+
+h3 {
+  font-family: "Roboto Mono", monospace;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+}
+
+/********  STYLES  **********/
+nav {
+  background: #1e2434;
+  color: white;
+  box-shadow: 0 2px 3px #4e555c, 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+main {
+  padding-bottom: 50px;
+}
+
+/***    CHAT    ***/
+
+/*** INPUT BAR ***/
+
+/***  MESSAGE  ***/
+.message {
+  box-shadow: 0 2px 3px #b0b6bb, 0 5px 5px rgba(0, 0, 0, 0.1);
+  background: #fdf4eb; /* light orange */
+  /* background: #EAF3F8; */ /* light blue */
+}
