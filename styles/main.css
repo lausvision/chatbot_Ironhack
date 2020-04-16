@@ -1,3 +1,4 @@
+
 /******** CSS RESET *********/
 
 html {
@@ -57,7 +58,7 @@ p {
 /********  STYLES  **********/
 nav {
   background: #1e2434;
-  color: white;
+  color: rgb(255, 255, 255);
   box-shadow: 0 2px 3px #4e555c, 0 5px 5px rgba(0, 0, 0, 0.1);
   padding: 10px 20px;
 
@@ -92,6 +93,7 @@ height: 50px;
 background: #2d354d;
 padding: 10px 20px;
 display: flex;
+padding-bottom: 50px;
 }
 
 #message-input {
@@ -106,8 +108,7 @@ font-size: 14px;
 
 #message-send-img {
 width: 32px;
-height: 32px;
-padding: 5px;
+height: 30px;
 }
 
 
