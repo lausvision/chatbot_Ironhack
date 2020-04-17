@@ -15,12 +15,67 @@ const replies = [
 ];
 
 // GET THE DOM ELEMENTS
+const chat = document.getElementById("chat");
+const messageInput = document.getElementById("message-input");
+const sendButton = document.getElementById("message-send-img");
 
 // HELPER FUNCTIONS
-function sendMessage() {}
+function sendMessage() {
+  const inputValue = messageInput.value;
 
-function chatbotReply() {}
+  displayMessage(inputValue, "Me");
+  messageInput.value = "";
+}
 
-function displayMessage() {}
+function chatbotReply() {
+  const randomIndex = Math.floor(Math.random() * replies.length);
+  const randomMessage = replies[randomIndex];
+
+  displayMessage(randomMessage, "Chatbot");
+}
+
+function displayMessage(message, sender) {
+  const tempDiv = document.createElement("div");
+
+  if (sender === "Chatbot") {
+    tempDiv.innerHTML = `
+  <div class="message">
+          <img src="./images/ironhack.png" alt="avatar photo" class="avatar" />
+          <h3 class="headline">Chatbot</h3>
+          <p>${message}</p>
+        </div>
+  `;
+  } else if (sender === "Me") {
+    tempDiv.innerHTML = `
+  <div class="message align-right">
+      <img src="./images/ironhack.png" alt="avatar photo" class="avatar" />
+      <h3 class="headline">${sender}</h3>
+      <p>${message}</p>
+    </div>;
+  `;
+  }
+
+  const newMessage = tempDiv.children[0];
+
+  chat.appendChild(newMessage);
+
+  if (sender === "Me") {
+    //chatbotReply();
+    setTimeout(chatbotReply, 2000);
+  }
+
+  chat.scrollTop = chat.scrollHeight;
+  
+}
 
 // EVENT LISTENERS
+
+sendButton.addEventListener("click", function(event) {
+  sendMessage();
+});
+
+messageInput.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    sendMessage();
+  }
+});
