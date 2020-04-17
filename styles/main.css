@@ -123,12 +123,12 @@ height: 30px;
   word-break: break-word;
   line-height: 16px;
   box-shadow: 0 2px 3px #b0b6bb, 0 5px 5px rgba(0, 0, 0, 0.1);
-  background: #fdf4eb; /* light orange */
+  background: rgb(133, 247, 247); /* light orange */
   /* background: #EAF3F8; */ /* light blue */
 }
 
 .align-right{
-background: #EAF3F8;
+background: pink;
 align-self: flex-end;
 }
 
@@ -139,9 +139,11 @@ font-size: 12px;
 }
 
 .avatar{
-width: 35px;
+width: 70px;
 float: left;
 margin: 5px;
+border-radius: 40px;
+
 }
 
 .message p{
