@@ -40,7 +40,7 @@ function displayMessage(message, sender) {
   if (sender === "Chatbot") {
     tempDiv.innerHTML = `
   <div class="message">
-          <img src="./images/ironhack.png" alt="avatar photo" class="avatar" />
+          <img src="./images/bratz1.jpg" alt="avatar photo" class="avatar" />
           <h3 class="headline">Chatbot</h3>
           <p>${message}</p>
         </div>
@@ -48,7 +48,7 @@ function displayMessage(message, sender) {
   } else if (sender === "Me") {
     tempDiv.innerHTML = `
   <div class="message align-right">
-      <img src="./images/ironhack.png" alt="avatar photo" class="avatar" />
+      <img src="./images/10.png" alt="avatar photo" class="avatar" />
       <h3 class="headline">${sender}</h3>
       <p>${message}</p>
     </div>;
